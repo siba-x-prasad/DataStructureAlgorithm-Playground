@@ -1,0 +1,1 @@
+package codingPrograms;public class SwapBetweenNumberWIthout3rdVariable {    public static void main(String...args){        swapNumber(3,5);    }    // 3 5    private static void swapNumber(int a, int b){        System.out.println("a = "+a+" b="+b);        a = a + b;        b = a - b;        a = a - b;        System.out.println("a = "+a+" b="+b);    }}

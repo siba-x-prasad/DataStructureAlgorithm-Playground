@@ -1,0 +1,1 @@
+package array;public class SecondLargestNumberInArray {    public static void main(String[] args){  }  private int getSecondLargestNumber(int[] array){        int highestNum = 0;        int secondHighestNum = 0;      for(int i = 0; i < array.length; i++){                }      return 0;  }}

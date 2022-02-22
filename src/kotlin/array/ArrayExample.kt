@@ -1,0 +1,1 @@
+package kotlin.arrayfun main() {    val intArray = arrayOf<Int>(12)    val intArray1 = IntArray(10)    val constArray = arrayOf(1,2,3,4)}

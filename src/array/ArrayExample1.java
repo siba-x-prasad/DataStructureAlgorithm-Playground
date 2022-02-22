@@ -1,0 +1,1 @@
+package array;public class ArrayExample1 {    int[] intArray = new int[10];    String[] strArray = new String[10];    String[] strConstArray = {"siba","Prasad","Mohanty"};}
