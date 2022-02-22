@@ -11,14 +11,16 @@
 
 ## Limitations of Array
 - Array is fixed in size, that is we can’t increase the size once we declare an array
-- Array stores Only Homogeneous data , If we waHASHTABLEnt to add other data type, it will show compile time error, Eg Student[] studentArray = new Student[12]; 	studentArray[0] = new Student(); studentArray[1] = new Customer(); , here it will show Compile time error
+- Array stores Only Homogeneous data , If we want to add other data type, it will show compile time error, Eg Student[] studentArray = new Student[12]; 	studentArray[0] = new Student(); studentArray[1] = new Customer(); , here it will show Compile time error
 Solution to the above problem : we can use an array of objects , then we can typecast a specific object.
 - No Underlying Data Structure for Arrays. For every operation we have to write our own methods.
 - To Overcome these above problems we go with Collections
 - If you know the size of the data structure , go for Array is highly recommended else collection
 
 ## How Arraylist Store its Value
-- Arraylist uses Dynamic arrays to store or retrieve data. Once Arraylist reaches up to its maximum size, and we want to add another element to the array, A bigger arraylist will be created i.e 1.5 of its original size and copy all the elements from old arraylist and add the new element to the new arraylist.
+- Arraylist uses Dynamic arrays to store or retrieve data.
+- Once Arraylist reaches up to its maximum size, and we want to add another element to the array,
+- A bigger arraylist will be created i.e 1.5 of its original size and copy all the elements from old arraylist and add the new element to the new arraylist.
 ## Difference Between Array and Collection
 - If we know the size, then arrays are recommended , if size is not known and it can increase later, then Collection is recommended.
 - Arrays are fixed in size but Collections are growable in nature i.e based upon our requirement we can increase or decrease the size of collections
@@ -106,12 +108,13 @@ Solution to the above problem : we can use an array of objects , then we can typ
 - The underlying Data structure Resizable Array or Growable Array
 - Duplicate are allowed
 - Insertion Order is preserved
-- Heterogeneous Objects are allowed [ Except Treeset and TreeMap  everywhere heterogeneous Objects are allowed ].
+- Heterogeneous Objects are allowed [ Except TreeSet and TreeMap  everywhere heterogeneous Objects are allowed ].
 - Null insertion is possible
 - **Constructor**
 ```
    1.ArrayList al = new ArrayList();
-   Creates an empty Arraylist object with default initial capacity 10. Oce Arraylist reaches its max capacity a new Arraylist will be created with new Capacity = (currentCapacity * 3/2)+1
+   Creates an empty Arraylist object with default initial capacity 10.
+   Once Arraylist reaches its max capacity a new Arraylist will be created with new Capacity = (currentCapacity * 3/2)+1
    2. ArrayList al = new Arraylist(int Capacity); // if we know the predefined size
    3. Arraylist al = new Arraylist(Collection c);
 ```
