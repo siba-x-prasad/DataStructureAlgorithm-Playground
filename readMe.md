@@ -14,4 +14,5 @@
 ## [Complexity](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/complexity.md)
 ## [Searching](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/searching.md)
 ## [Sorting](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/sorting.md)
+## [Collection By Durga](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/CollectionsByDurga.md)
 
