@@ -1,0 +1,1 @@
+package kotlinprograms.arrayclass SimpleArrayPrograms {}
