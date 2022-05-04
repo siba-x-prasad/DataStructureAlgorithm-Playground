@@ -40,6 +40,16 @@ Solution to the above problem : we can use an array of objects , then we can typ
 - Collection Interface defines the most common methods which are applicable for any collection object.
 - In General collection interface is considered as root interface of collection framework.
 - NOTE :  There is no concrete class which implements collection interface directly.
+- Collection
+- List
+- Set
+- SortedSet
+- NavigableSet
+- Queue
+- Map
+- SortedMap
+- NavigableMap
+
 
 ## 1.Collection Interface :
 - If we want to represent a group of individual objects as a single entity then we should go for collection. Collection is nothing but a group of Individual objects.
