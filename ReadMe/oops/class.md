@@ -1,0 +1,12 @@
+# Class
+- Class is a blueprint of object by using which object is created.
+- It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components
+- Modifiers - > public, protected, default, private
+- Class - it's a keyword using which class is created
+- class name : it's name of the class
+- super classes
+- interfaces
+- methods
+- variables
+- IN java, everything is encapsulatetd inside a block of code know as class
+- 
