@@ -1,0 +1,1 @@
+package kotlinprogramsfun main() {}fun rotateArray(arr : Array<Int>, d: Int, n : Int){}

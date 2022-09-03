@@ -1,0 +1,1 @@
+package recusrion;import java.util.ArrayList;public class FibonaciSeries {    public static void main(String...args){        int result = fibonacciSeries(9);        System.out.println(result);    }    private static int fibonacciSeries(int n){        if(n <= 1) return 1;        else return fibonacciSeries(n-1)+fibonacciSeries(n-2);    }}
