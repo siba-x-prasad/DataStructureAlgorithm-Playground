@@ -12,7 +12,7 @@
 ## [HashMap](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/hashMap.md)
 ## [HashTable](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/hashTable.md)
 ## [Graph](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/graph.md)
-## [Complexity](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/complexity.md)
+## [Complexity](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/TimeComplexity.md)
 ## [Searching](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/searching.md)
 ## [Sorting](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/sorting.md)
 ## [Collection By Durga](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/CollectionsByDurga.md)
