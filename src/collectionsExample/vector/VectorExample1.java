@@ -1,1 +1,0 @@
-package collectionsExample.vector;import java.util.Vector;public class VectorExample1 {    Vector vector = new Vector<String>(10);}

@@ -17,3 +17,8 @@
 ## [Sorting](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/sorting.md)
 ## [Collection By Durga](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/CollectionsByDurga.md)
 
+## How it works internally
+
+
+
+## Coding Programs

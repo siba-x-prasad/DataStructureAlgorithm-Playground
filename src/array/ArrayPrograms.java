@@ -9,16 +9,18 @@ public class ArrayPrograms {
         int[] a = { 1, 1, 2, 2, 2 };
         int n = a.length;
 
-        n = removeduplicates(a, n);
+        n = removeDuplicates(a, n);
 
         // Printing The array elements
         for (int i = 0; i < n; i++)
             System.out.print(a[i] + " ");
-
     }
 
-
-//  How to find the missing number in integer array of 1 to 100?
+    /**
+     * How to find the missing number in integer array of 1 to 100?
+     * @param array
+     * @return
+     */
     private int getMissingNumbers(int[] array) {
         int length = array.length;
         int totalSum = length * (length + 1) / 2;
@@ -29,8 +31,32 @@ public class ArrayPrograms {
         return totalSum - sumOfArray;
     }
 
-    // How to find duplicate number on Integer array in Java ?
-    private int duplicateNumber(int[] array) {
+    /**
+     * Combine two arrays into one
+     * @param combinedArray
+     * @param array2
+     */
+    void combine(String[] combinedArray, String[] array2){
+        ArrayList<String> al = new ArrayList<>();
+        HashMap<String, String> hm = new HashMap<>();
+        for(String item : combinedArray){
+            if(hm.containsKey(item)){
+                al.add(item);
+            }
+            else{
+                hm.put(item, item);
+            }
+        }
+
+        System.out.println(al);
+    }
+
+    /**
+     * How to find duplicate number on Integer array in Java ?
+     * @param array
+     * @return
+     */
+    private int findDuplicateElementInArray(int[] array) {
         int duplicateNumber = 0;
         // solution 1
         for (int i = 0; i < array.length; i++) {
@@ -64,7 +90,12 @@ public class ArrayPrograms {
 
     }
 
-    // How to check if array contains a number in Java ?
+    /**
+     * How to check if array contains a number in Java ?
+     * @param array
+     * @param number
+     * @return
+     */
     private boolean checkIfArrayContainsNumber(int[] array, int number) {
         boolean isContainNumber = false;
         // solution 1 - compare each element with the given number
@@ -83,7 +114,10 @@ public class ArrayPrograms {
         return isContainNumber;
     }
 
-    // How to find largest and smallest number in unsorted array ?
+    /**
+     * How to find largest and smallest number in unsorted array ?
+     * @param array
+     */
     private void findLargestAndSmallestNumber(int[] array) {
         int smallestNumber = array[0];
         int largestNumber = array[0];
@@ -99,7 +133,10 @@ public class ArrayPrograms {
 
     }
 
-    // - How to find all pairs on integer array whose sum is equal to given number ?
+    /**
+     * How to find all pairs on integer array whose sum is equal to given number ?
+     * @param array
+     */
     private void findAllPairs(int[] array) {
         Integer[] arrayPair = new Integer[2];
         HashMap<Integer, Integer[]> map = new HashMap<>();
@@ -132,7 +169,11 @@ public class ArrayPrograms {
 
         System.out.printf("Count of pairs is %d", count);
     }
-    // How to find repeated numbers in an array if it contains multiple duplicates ?
+
+    /**
+     * How to find repeated numbers in an array if it contains multiple duplicates ?
+     * @param array
+     */
     private void findDuplicateNumbersInArray(int[] array){
         HashMap<Integer, Integer> map = new HashMap<>();
         int totalDuplicate = 0;
@@ -152,8 +193,11 @@ public class ArrayPrograms {
             System.out.println(key+" repeated "+value +" Times");
         }
     }
-    // Write a program to remove duplicates from array in Java ?
-    public static int removeduplicates(int a[], int n) {
+
+    /**
+     * Write a program to remove duplicates from array in Java ?
+      */
+    public static int removeDuplicates(int array[], int n) {
         // { 1, 1, 2, 2, 2 }
         if (n == 0 || n == 1) {
             return n;
@@ -165,19 +209,24 @@ public class ArrayPrograms {
         int j = 0;
 
         for (int i = 0; i < n - 1; i++) {
-            if (a[i] != a[i + 1]) {
-                temp[j++] = a[i];
+            if (array[i] != array[i + 1]) {
+                temp[j++] = array[i];
             }
         }
 
-        temp[j++] = a[n - 1];
+        temp[j++] = array[n - 1];
 
         // Changing the original array
-        if (j >= 0) System.arraycopy(temp, 0, a, 0, j);
+        if (j >= 0) System.arraycopy(temp, 0, array, 0, j);
 
         return j;
     }
-    // FInd Unique elements of an array
+
+    /**
+     * Find Unique elements of an array
+     * @param arr
+     * @return
+     */
     private int[] getUniqueElementArray(int[] arr) {
 //        int [] arr = {1,1,1,2,2,2,3,3,3,4,4,5,5,6,7,8,};
         for (int j = 0; j < arr.length; j++) {
@@ -196,7 +245,9 @@ public class ArrayPrograms {
     }
     // Write a program to find intersection of two sorted arrays in Java?
 
-    // There is an array with every element repeated twice except one. Find that element?
+    /**
+     * There is an array with every element repeated twice except one. Find that element?
+      */
     private int getNonRepeatedNumber(int[] array){
         // easy way
         // sort the array and check
@@ -210,8 +261,14 @@ public class ArrayPrograms {
         }
         return res;
     }
-    //- How to find kth the smallest element in unsorted array?
-    private int getnthSmallestElement(int[] arr, int kth){
+
+    /**
+     * How to find kth the smallest element in unsorted array?
+     * @param arr
+     * @param kth
+     * @return
+     */
+    private int getNthSmallestElement(int[] arr, int kth){
         int kthSmallestNumber = 0;
         // Sort the given array
         Arrays.sort(arr);
@@ -219,8 +276,14 @@ public class ArrayPrograms {
         // the sorted array
         return arr[kth - 1];
     }
-    //- How to find kth the largest element in unsorted array?
-    private int getnthLargestElement(Integer[] arr, int kth){
+
+    /**
+     * How to find kth the largest element in unsorted array?
+     * @param arr
+     * @param kth
+     * @return
+     */
+    private int getNthLargestElement(Integer[] arr, int kth){
         int kthSmallestNumber = 0;
         // Sort the given array
         Arrays.sort(arr, Collections.reverseOrder());
@@ -229,7 +292,12 @@ public class ArrayPrograms {
         return arr[kth - 1];
     }
 
-// How to find common elements in three sorted array?
+    /**
+     * How to find common elements in three sorted array?
+     * @param ar1
+     * @param ar2
+     * @param ar3
+     */
     private void printCommonElementsIn3SortedArray(int[] ar1, int[] ar2, int[] ar3){
         int i = 0, j = 0, k = 0;
 
@@ -260,4 +328,168 @@ public class ArrayPrograms {
                 k++;
         }
     }
+
+    /**
+     * Find the missing number in an array
+     * @param array
+     */
+    private void printMissingNumber(int[] array){
+        int currentItem = array[0];
+        String missingItem = "";
+        for(int i  = 1; i<array.length;i++){
+            if(currentItem+1 == array[i]){
+                currentItem = array[i];
+            }
+            else{
+                System.out.println(""+currentItem+1);
+            }
+        }
+    }
+
+    /**
+     * How to find duplicate number on Integer array in Java?
+     * @param array
+     */
+    private void printDuplicateNumbers(int[] array){
+        int temp = array[0];
+        for(int i  = 1; i<array.length;i++){
+            if(temp == array[i]){
+                System.out.println("Duplicate Number Is "+temp);
+            }
+            else{
+                temp = array[i];
+            }
+        }
+    }
+
+    /**
+     * How to check if array contains a number in Java?
+     * @param array
+     * @param number
+     */
+    private void checkIfNumberExists(int[] array, int number){
+        for(int i = 0; i<array.length; i++ ){
+            if(array[i] == number){
+                System.out.println(number+" is Present at "+i+" Position");
+            }
+        }
+    }
+
+    /**
+     * How to find largest and smallest number in unsorted array?
+     * @param array
+     */
+    private void findSmallestLargestNumber(int[] array){
+        int smallestNumber = array[0];
+        int biggestNumber = array[array.length-1];
+        for(int i = 1; i<array.length-1; i++ ){
+            if(smallestNumber > array[i]){
+                smallestNumber = array[i];
+            }
+            if(biggestNumber < array[i]){
+                biggestNumber = array[i];
+            }
+        }
+        System.out.println(biggestNumber+" is Biggest Number And "+smallestNumber+" is Smallest Number");
+    }
+
+    /**
+     * How to find all pairs on integer array whose sum is equal to given number ?
+     * @param array
+     * @param sumOf2Numbers
+     */
+    private void findPairsWhoseSumIsSame(int[] array, int sumOf2Numbers){
+        for(int i = 0; i<array.length; i++ ){
+            for(int j = 0; j<array.length; j++ ){
+                if(array[i]+array[j] == sumOf2Numbers){
+                    System.out.println("2 Pair sum is same "+array[i] +" AND "+array[j]);
+                }
+            }
+        }
+    }
+
+    /**
+     * How to find repeated numbers in an array if it contains multiple duplicates ?
+     * @param array
+     */
+    private void findRepeatedNumbersFromArray(int[] array){
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for(int i = 0; i< array.length; i++){
+            Integer key = array[i];
+            if(map.containsKey(key)){
+                int count = map.get(key);
+                map.put(key,++count);
+            }
+            else{
+                map.put(key,1);
+            }
+        }
+
+        map.forEach((key,value) -> {
+            if(value > 1){
+                System.out.println(key+" is Repeated "+value+" Times");
+            }
+        });
+    }
+
+    /**
+     * Print Two sum Combination in Array
+     * @param array
+     * @param sum
+     */
+    private static void printTwoSumCombinationInArray(int[] array, int sum){
+        HashSet<Integer> hashSetUniqueCombination = new HashSet<>();
+        for(int item : array){
+            int otherItem = sum - item;
+            if(!hashSetUniqueCombination.contains(otherItem)){
+                hashSetUniqueCombination.add(otherItem);
+            }
+            else{
+                System.out.println(otherItem+" "+item);
+            }
+        }
+    }
+
+    /**
+     * Print Three Sum Combination Array
+     * @param array
+     * @param targetSum
+     * @return
+     */
+    private static List<List<Integer>> printThreeSumCombinationInArray(int[] array, int targetSum) {
+        Arrays.sort(array);
+
+        HashSet<Integer>  hs  = new HashSet<>();
+        for(int i : array){
+            hs.add(i);
+        }
+
+        int[] array1 = new int[hs.size()];
+        int pos = 0;
+        for(Integer s :  hs){
+            array1[pos] = s;
+        }
+
+        List<List<Integer>> threeSumCombinationList = new ArrayList<>();
+
+        for (int i = 0; i < array.length - 2; i++) {
+            HashSet<Integer> set = new HashSet<>();
+
+            int currentSum = targetSum - array[i];
+
+            for (int j = i+1; j < array.length; j++) {
+                if (set.contains(currentSum - array[j]) ) {
+                    System.out.println(array[i] + " + " + array[j] + " + " + (currentSum - array[j])+" = "+targetSum);
+                    List<Integer> result = new ArrayList<>();
+                    result.add(array[i]);
+                    result.add(array[j]);
+                    result.add(currentSum - array[j]);
+                    threeSumCombinationList.add(result);
+                }
+                set.add(array[j]);
+            }
+        }
+        return threeSumCombinationList;
+    }
+
 }

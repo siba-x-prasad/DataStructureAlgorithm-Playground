@@ -4,7 +4,7 @@
 - extra methods
 - addElement(Object o);   -> Its a method only for Vector
 - removeElement
-- Create an empty collectionsExample.Vector object with default initial capacity 10
-- Once collectionsExample.Vector reaches its max capacity a new collectionsExample.vector object will be created with new capacity = 2 - current Capacity
+- Create an empty collections.Vector object with default initial capacity 10
+- Once collections.Vector reaches its max capacity a new collections.vector object will be created with new capacity = 2 - current Capacity
 - newCapacity = currentCapacity - 2;
   

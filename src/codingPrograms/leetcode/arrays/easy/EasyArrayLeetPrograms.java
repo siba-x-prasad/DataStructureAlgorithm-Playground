@@ -8,7 +8,8 @@ public class EasyArrayLeetPrograms {
     public static void main(String[] args) {
 //        int[] array = getConcatenation(new int[]{1,2,1});
 //        int[] array = runningSum(new int[]{1, 2, 3, 4});
-//        int[] array = shuffle(new int[]{2, 5, 1, 3, 4, 7}, 3);
+        int[] array = shuffle(new int[]{2, 5, 1, 3, 4, 7}, 3);
+        System.out.println(Arrays.toString(array));
 //        int[] array = decompressRLElist(new int[]{1,2,3,4});
 //        System.out.println(Arrays.toString(array));
 //        String result = restoreString("codeleet", new int[]{4,5,6,7,0,2,1,3});
@@ -20,11 +21,23 @@ public class EasyArrayLeetPrograms {
         boolean b = arrayStringsAreEqual(new String[]{"ab", "c"}, new String[]{"a", "bc"});
         System.out.println(b);
 
-        int[][] arr = largestLocal(new int[][]{{9,9,8,1}, {5,6,2,6}, {8,2,6,4}, {6,2,2,2}});
+        int[][] arr = largestLocal(new int[][]{{9, 9, 8, 1}, {5, 6, 2, 6}, {8, 2, 6, 4}, {6, 2, 2, 2}});
 
-        for(int[] arr1 : arr){
+        for (int[] arr1 : arr) {
             System.out.println(Arrays.toString(arr1));
         }
+    }
+
+    /**
+     * https://leetcode.com/problems/build-array-from-permutation/
+     */
+
+    static int[] buildArray(int[] array) {
+        int[] newArray = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            newArray[i] = array[array[i]];
+        }
+        return newArray;
     }
 
     /**
@@ -37,11 +50,9 @@ public class EasyArrayLeetPrograms {
      * - ans = [1,2,1,1,2,1]
      */
     public static int[] getConcatenation(int[] nums) {
-        int expectedSize = nums.length * 2;
-        int[] newArray = new int[expectedSize];
+        int[] newArray = new int[nums.length * 2];
         for (int i = 0; i < nums.length; i++) {
-            newArray[i] = nums[i];
-            newArray[nums.length + i] = nums[i];
+            newArray[i] = newArray[nums.length + i] = nums[i];
         }
         return newArray;
     }
@@ -84,7 +95,6 @@ public class EasyArrayLeetPrograms {
                 result--;
             }
         }
-
         return result;
     }
 
@@ -100,18 +110,18 @@ public class EasyArrayLeetPrograms {
      * @return
      */
     private static int maximumWealth(int[][] accounts) {
-        int richestHealth = 0;
-        int currentHealth = 0;
+        int richestWealth = 0;
+        int currentWealth = 0;
         for (int[] array : accounts) {
             for (int i : array) {
-                currentHealth += i;
+                currentWealth += i;
             }
-            if (richestHealth < currentHealth) {
-                richestHealth = currentHealth;
+            if (richestWealth < currentWealth) {
+                richestWealth = currentWealth;
             }
-            currentHealth = 0;
+            currentWealth = 0;
         }
-        return richestHealth;
+        return richestWealth;
     }
 
     /**
@@ -128,14 +138,11 @@ public class EasyArrayLeetPrograms {
 
     private static int[] shuffle(int[] nums, int n) { // 0 3 1 4  2 5
         int[] array = new int[nums.length];
-
         int counter = 0;
-        for (int i = 0; i < n * 2; i = i + 2) {
-
-            array[i] = nums[i - counter];
-            array[i + 1] = nums[n + counter];
+        for (int i = 0; i < n; i++) {
+            array[counter] = nums[i];
+            array[++counter] = nums[n + i];
             counter++;
-
         }
 
         return array;
@@ -442,19 +449,19 @@ public class EasyArrayLeetPrograms {
         int[][] resultArray = new int[grid[0].length - 2][grid.length - 2];
 
         for (int i = 0; i < grid[0].length - 2; i++) {
-            int rowPosition = i+1;
+            int rowPosition = i + 1;
             int maxRowItem = 0;
 
-            for(int k : grid[rowPosition] ){
-                if(maxRowItem < k){
+            for (int k : grid[rowPosition]) {
+                if (maxRowItem < k) {
                     maxRowItem = k;
                 }
             }
 
             for (int j = 0; j < grid.length - 2; j++) {
-                int columnPosition = j+1;
-                for(int[] arr : grid){
-                    if(maxRowItem < arr[columnPosition]){
+                int columnPosition = j + 1;
+                for (int[] arr : grid) {
+                    if (maxRowItem < arr[columnPosition]) {
                         maxRowItem = arr[columnPosition];
                     }
                 }
