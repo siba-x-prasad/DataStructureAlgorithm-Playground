@@ -69,7 +69,7 @@
 26) Sort an Array using the Quicksort algorithm
 27) Find the first non-repeating element in a given array of integers 
 28) Sub arrays with equal 1s and 0s 
-29) Rearrange the array in alternating positive and negative items  Find if there is any subarray with a sum equal to zero 
+29) Rearrange the array in alternating positive and negative items  Find if there is any sub array with a sum equal to zero 
 30) Find the Largest sum contiguous Sub array
 31) Find the factorial of a large number
 32) Find Maximum Product Sub array
@@ -78,23 +78,25 @@
 35) Max sum in the configuration
 36) Minimum Platforms
 37) Minimize the maximum difference between the heights
-38) Minimum number of jumps to reach the end  Stock Span problem
-39) Find a triplet that sums to a given value
-40) Smallest positive missing number
-41) Find the row with a maximum number of 1’s
-42) Print the matrix in a Spiral manner
-43) Find whether an array is a subset of another array  Implement two Stacks in an array
-44) Majority Element
-45) Wave Array
-46) rapping Rainwater  Maximum Index
-47) Max sum path in two arrays
-48) Find Missing And Repeating
-49) Stock buy and sell Problem
-50) Pair with the given sum in a sorted array  Chocolate Distribution Problem
-51) Partition Equal Subset Sum
-52) Smallest Positive integer that can’t be represented as a sum
-53) Coin Change Problem
-54) Longest Alternating subsequence
+38) Minimum number of jumps to reach the end 
+39) Stock Span problem
+40) Find a triplet that sums to a given value
+41) Smallest positive missing number
+42) Find the row with a maximum number of 1’s
+43) Print the matrix in a Spiral manner
+44) Find whether an array is a subset of another array
+45) Implement two Stacks in an array
+46) Majority Element
+47) Wave Array
+48) rapping Rainwater  Maximum Index
+49) Max sum path in two arrays
+50) Find Missing And Repeating
+51) Stock buy and sell Problem
+52) Pair with the given sum in a sorted array  Chocolate Distribution Problem
+53) Partition Equal Subset Sum
+54) Smallest Positive integer that can’t be represented as a sum
+55) Coin Change Problem
+56) Longest Alternating subsequence
 
 ## Solutions of above programs
 - 
