@@ -4,7 +4,7 @@
 ## [Programs](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/programs/StringPrograms.md)
 ## [Array](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/programs/Array.md)
 ## [List](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/arrayList.md)
-## [ArrayList](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/arrayList.md)
+## [ArrayList](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/ArrayList.md)
 ## [LinkedList](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/linkedList.md)
 ## [Set](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/set.md)
 ## [Hashset](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/hashSet.md)
