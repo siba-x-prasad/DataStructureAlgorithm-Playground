@@ -7,7 +7,7 @@
 ## [ArrayList](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/ArrayList.md)
 ## [LinkedList](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/LinkedList.md)
 ## [Set](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/Set.md)
-## [Hashset](https://github.com/siba-x-prasad/DataStructure-Algorithm-Database/blob/master/ReadMe/collections/hashSet.md)
+## [Hashset](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/HashSet.md)
 ## [TreeSet](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/TreeSet.md)
 ## [HashMap](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/HashMap.md)
 ## [HashTable](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/HashTable.md)
