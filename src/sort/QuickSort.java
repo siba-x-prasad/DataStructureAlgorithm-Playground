@@ -2,7 +2,7 @@ package sort;
 
 // Quick sort in Java
 
-import org.jetbrains.annotations.NotNull;
+import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 
 import java.util.Arrays;
 

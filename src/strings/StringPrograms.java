@@ -52,6 +52,21 @@ public class StringPrograms {
         } else {
             System.out.println(str1 + " And " + str2 + " Are Not Equal by ignoring case");
         }
+
+        if (str1.length() != str2.length()) {
+            System.out.println(str1 + " And " + str2 + " Are Not Equal by ignoring case");
+        return;
+        }
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+        for (int i = 0; i< str1.length(); i++) {
+            for (int j = 0; j< str2.length(); j++) {
+                if (str1.charAt(i) != str2.charAt(j)) {
+                    System.out.println(str1 + " And " + str2 + " Are Not Equal by ignoring case");
+                    break;
+                }
+            }
+        }
     }
 
     /**
