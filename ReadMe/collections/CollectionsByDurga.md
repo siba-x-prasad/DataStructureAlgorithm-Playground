@@ -705,18 +705,110 @@ Return  i2.comareTo(i1)
 - But if we are defining our own sorting order using comparator then objects need not be homogeneous and comparable. We can insert heterogeneous and non comparable objects.
 
 ## Comparable Vs Comparator
-Predefined comparable classes like String default sorting order already available. If we are not satisfied by that, then we can define our own sorting order By comparator object.
-FOr predefined non-comparable classes like StringBuffer, Default sorting order is not already available. We can define required sorting by implementing comparator interface.
-For our own classes like Employee,Student,Customer the person who is writing our own class, he is responsible to define default natural sorting order by implementing comparable interface.
-The person who is using our class is not satisfied by the default sorting order, then he can writing his own customized sorting by using comparator.
+- Predefined comparable classes like String default sorting order already available.
+- If we are not satisfied by that, then we can define our own sorting order By comparator object.
+- For predefined non-comparable classes like StringBuffer, Default sorting order is not already available.
+- We can define required sorting by implementing comparator interface.
+- For our own classes like Employee,Student,Customer the person who is writing our own class, he is responsible to define default natural sorting order by implementing comparable interface.
+- The person who is using our class is not satisfied by the default sorting order, then he can writing his own customized sorting by using comparator.
 
 ## Comparison Between Comparable and Comparator
 - Comparable meant for default Sorting order and Comparator meant for Customized sorting order
 - Comparable present is java.lang package and Comparator present in java.util package
 - Comparable have one method compareTo(Object obj) and comparator have 2 methods compare(Object obj1 , Object 2 ) and equal()
-- All wrapper classes and string class implements Comparable. Collator and RuleBasedCollator implements COmparator
+- All wrapper classes and string class implements Comparable. Collator and RuleBasedCollator implements COmparatorclass
+## Comparable example
+```
+Student implements Comparable<Student>{  
+  int rollno;  
+  String name;  
+  int age;  
+  Student(int rollno,String name,int age){  
+   this.rollno=rollno;  
+   this.name=name;  
+   this.age=age;  
+ }  
+  
+public int compareTo(Student st){  
+  if(age==st.age)  
+     return 0;  
+  else if(age>st.age)  
+     return 1;  
+  else  
+     return -1;  
+  }  
+}  
+```
+- main class
+```
+import java.util.*;  
+public class TestSort1{  
+public static void main(String args[]){  
+  ArrayList<Student> al=new           ArrayList<Student>();  
+  al.add(new Student(101,"Vijay",23));  
+  al.add(new Student(106,"Ajay",27));  
+  al.add(new Student(105,"Jai",21));  
+  
+  Collections.sort(al);  
+  for(Student st:al){  
+    System.out.println(st.rollno+" "+st.name+" "+st.age);  
+   }  
+  }  
+}  
+```
+## comparator example
+- object
+```
+import java.util.*;  
+class AgeComparator implements Comparator{  
+public int compare(Object o1,Object o2){  
+Student s1=(Student)o1;  
+Student s2=(Student)o2;  
+  
+if(s1.age==s2.age)  
+return 0;  
+else if(s1.age>s2.age)  
+return 1;  
+else  
 
+return -1;  
+}  
+}  
+```
 
+```
+class Simple{  
+public static void main(String args[]){  
+  
+ArrayList al=new ArrayList();  
+al.add(new Student(101,"Vijay",23));  
+al.add(new Student(106,"Ajay",27));  
+al.add(new Student(105,"Jai",21));  
+  
+System.out.println("Sorting by Name");  
+  
+
+Collections.sort(al,new NameComparator());  
+Iterator itr=al.iterator();  
+while(itr.hasNext()){  
+Student st=(Student)itr.next();  
+System.out.println(st.rollno+" "+st.name+" "+st.age);  
+}  
+  
+System.out.println("Sorting by age");  
+  
+Collections.sort(al,new AgeComparator());  
+Iterator itr2=al.iterator();  
+
+while(itr2.hasNext()){  
+Student st=(Student)itr2.next();  
+System.out.println(st.rollno+" "+st.name+" "+st.age);  
+}  
+  
+  
+}  
+}  
+```
 
 
 
