@@ -1,10 +1,10 @@
 # DataStructure Algorithms Database
 ## Important Links
 - [DSA - leetcode, company wise questions](https://github.com/siba-x-prasad/DataStructures-Algorithms)
-- [Top 100 DSA interview questions] (https://github.com/siba-x-prasad/TOP-100-DSA-Interview-Questions)
-- [Useful Coding Interview] (https://github.com/siba-x-prasad/Useful_coding-interview-university?tab=readme-ov-file#sorting)
-- [Tech Interview Handbook] (https://github.com/siba-x-prasad/Useful_tech-interview-handbook)
-- [Topic wise questions] (https://github.com/rampatra/Algorithms-and-Data-Structures-in-Java)
+- [Top 100 DSA interview questions](https://github.com/siba-x-prasad/TOP-100-DSA-Interview-Questions)
+- [Useful Coding Interview](https://github.com/siba-x-prasad/Useful_coding-interview-university?tab=readme-ov-file#sorting)
+- [Tech Interview Handbook](https://github.com/siba-x-prasad/Useful_tech-interview-handbook)
+- [Topic wise questions](https://github.com/rampatra/Algorithms-and-Data-Structures-in-Java)
 
 ## [Object](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/Objects.md)
 ## [String](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/String.md)
