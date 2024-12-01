@@ -58,7 +58,7 @@
 - Map
 - SortedMap
 - NavigableMap
-- ![Collections](https://github.com/[username]/[reponame]/blob/[branch]/collectionsGraph.png?raw=true)
+- ![Collections](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/Images/collectionsGraph.png)
 
 ## 1.Collection Interface :
 - If we want to represent a group of individual objects as a single entity then we should go for collection. 
