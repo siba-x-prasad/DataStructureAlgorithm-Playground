@@ -1,13 +1,42 @@
 # Time and Space Complexity
 - https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/
-
+- [Big O Cheatsheet](https://www.bigocheatsheet.com)
+- 
 ## Time Complexity
+- It's not total required to execute a algorithm
+- It's a behaviour. How the input impact the number of computations of the algorithm.
 - Imagine a classroom of 100 students in which you gave your pen to one person. 
 - Now, you want that pen. Here are some ways to find the pen and what the O order is.
+## O(1) constant time complexity
 
-## O(n)
+## O(log N) – logarithmic time complexity. 
+- The time required to run the algorithm increases logarithmically with the size of the input.
+- Now I divide the class into two groups, then ask:
+- Is it on the left side, or the right side of the classroom ?
+- Then I take that group and divide it into two and ask again, and so on.
+- Repeat the process till you are left with one student who has your pen.
+- This is what you mean by O(log n).
+- I might need to do the O(n2) search if only one student knows on which student the pen is hidden.
+- I’d use the O(n) if one student had the pen, and only they knew it.
+- I’d use the O(log n) search if all the students knew, but would only tell me if I guessed the right side.
+- **NOTE :** We are interested in rate of growth of time with respect to the inputs taken during the program execution .
+- **NOTE:** In Binary Search, time complexity is O(log n)
+- Binary Search Tree, searching an element is also O(log n)
+- **EXAMPLES**
+- **Binary search:** This is a search algorithm that works by repeatedly dividing a sorted array in half until the target element is found, or until it is clear that the target element is not in the array. The time complexity of binary search is O(log N).
+- **Balanced binary search tree operations:** Insertion, deletion, and search operations in balanced binary search trees, such as AVL trees and Red-Black trees, all have a time complexity of O(log N).
+- https://tutorials.eu/olog-n-algorithm-example/
+## O(n) linear time complexity
+- The time required to run the algorithm increases linearly with the size of the input.
 - Going and asking each student individually is O(N).
-## O(n2)
+- ```
+  for (int i = 0; i < n, i++) {
+       print(i)
+  }
+  ```
+## O(N log N) – linearithmic time complexity. 
+- The time required to run the algorithm increases linearly with the size of the input, multiplied by the logarithm of the input size.  
+## O(N^2) – quadratic time complexity
 - You go and ask the first person of the class, if he has the pen.
 - Also, you ask this person about other 99 people in the classroom if they have that pen and so on.
 - This is what we call O(n2).
@@ -18,18 +47,12 @@
       }
   }
   ```
-## O(log n)
-- Now I divide the class into two groups, then ask: 
-- Is it on the left side, or the right side of the classroom ?
-- Then I take that group and divide it into two and ask again, and so on. 
-- Repeat the process till you are left with one student who has your pen. 
-- This is what you mean by O(log n).
-- I might need to do the O(n2) search if only one student knows on which student the pen is hidden. 
-- I’d use the O(n) if one student had the pen, and only they knew it. 
-- I’d use the O(log n) search if all the students knew, but would only tell me if I guessed the right side.
-- **NOTE :** We are interested in rate of growth of time with respect to the inputs taken during the program execution .
-- **NOTE:** In Binary Search, time complexity is O(log n)
-- Binary Search Tree, searching an element is also O(log n)
+## O(N^3) – cubic time complexity. 
+- The time required to run the algorithm increases cubically with the size of the input.
+## O(2^N) – exponential time complexity. 
+- The time required to run the algorithm increases exponentially with the size of the input.
+## O(N!) – factorial time complexity. 
+- The time required to run the algorithm increases factorially with the size of the input.  
 ## Let us understand using Real time example
 ```
     class MyClass{
@@ -139,3 +162,8 @@
 
 ## Graph
 ![Time Complexity Graph](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/Images/timeComplaxityGraph.png)
+## How to find the time complexity of a program
+- FInd the constraint of the program
+- In leet code you will find at the bottom of the program.
+- The apply these
+  ![Time Complexity Graph](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/Images/findTimeComplexity.png)
