@@ -10,6 +10,7 @@
 ## O(1) constant time complexity
 
 ## O(log N) – logarithmic time complexity. 
+- O(log N) basically means time goes up linearly while the n goes up exponentially. So if it takes 1 second to compute 10 elements, it will take 2 seconds to compute 100 elements, 3 seconds to compute 1000 elements, and so on.
 - The time required to run the algorithm increases logarithmically with the size of the input.
 - Now I divide the class into two groups, then ask:
 - Is it on the left side, or the right side of the classroom ?
