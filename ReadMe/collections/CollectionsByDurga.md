@@ -452,7 +452,7 @@
     }
 ```
 ## Set
-- ![Collections](https://github.com/[username]/[reponame]/blob/[branch]/collectionsGraph.png?raw=true)
+- ![Collections](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/Images/collectionsGraph.png?raw=true)
 - Collection(I Parent) ←--- Set(I) child.
 - HashSet(Class) implements Set(I).
 - LinkedHashSet(Class is the child class of HashSet).

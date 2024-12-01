@@ -11,6 +11,13 @@
 - You go and ask the first person of the class, if he has the pen.
 - Also, you ask this person about other 99 people in the classroom if they have that pen and so on.
 - This is what we call O(n2).
+- ```
+  for (int i = 0; i < n, i++) {
+      for (int i = 0; i < n, i++) {
+           print(i+" "+j) 
+      }
+  }
+  ```
 ## O(log n)
 - Now I divide the class into two groups, then ask: 
 - Is it on the left side, or the right side of the classroom ?
@@ -21,7 +28,8 @@
 - I’d use the O(n) if one student had the pen, and only they knew it. 
 - I’d use the O(log n) search if all the students knew, but would only tell me if I guessed the right side.
 - **NOTE :** We are interested in rate of growth of time with respect to the inputs taken during the program execution .
-
+- **NOTE:** In Binary Search, time complexity is O(log n)
+- Binary Search Tree, searching an element is also O(log n)
 ## Let us understand using Real time example
 ```
     class MyClass{
@@ -106,6 +114,8 @@
         }
     }
 ```
+## O(n! - n Factorial
+
 ## Polynomial Time Algorithms – O(np)
 - **O(n2):** A mistake occurred at the office, and every entry in each of the phone books has an extra "0" at the end of the phone number. 
 - Take some white-out and remove each zero.
@@ -117,9 +127,15 @@
     }
 ```
 ##  Factorial Time Algorithms – O(n!)
-- **O(n · n!):** We're ready to load the phonebooks onto the shipping dock. Unfortunately, the robot that was supposed to load the books has gone haywire: it's putting the books onto the truck in a random order! Even worse, it loads all the books onto the truck, then checks to see if they're in the right order, and if not, it unloads them and starts over. (This is the dreaded bogo sort.)
+- **O(n · n!):** We're ready to load the phonebooks onto the shipping dock. 
+- Unfortunately, the robot that was supposed to load the books has gone haywire: it's putting the books onto the truck in a random order! Even worse, it loads all the books onto the truck, then checks to see if they're in the right order, and if not, it unloads them and starts over. (This is the dreaded bogo sort.)
 ## Exponential Time Algorithms – O(kn)
+- Worst time complexity among all
+- We use Dynamic Programming to reduce this time complexity
 - **O(nn):**
 - You fix the robot so that it's loading things correctly.
 - The next day, one of your co-workers plays a prank on you and wires the loading dock robot to the automated printing systems.
 - Every time the robot goes to load an original book, the factory printer makes a duplicate run of all the phonebooks! Fortunately, the robot's bug-detection systems are sophisticated enough that the robot doesn't try printing even more copies when it encounters a duplicate book for loading, but it still has to load every original and duplicate book that's been printed.
+
+## Graph
+![Time Complexity Graph](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/Images/timeComplaxityGraph.png)
