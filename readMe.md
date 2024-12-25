@@ -24,6 +24,6 @@
 ## [Sorting](https://github.com/dev-spm/DataStructure-Algorithm-Database/blob/master/ReadMe/sorting.md)
 ## [Collection By Durga](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/collections/CollectionsByDurga.md)
 ## [Most Asked Programs](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/MostAskedPrograms.md)
-## [Program Patterns](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/problemSolvingCodingPatterns.md)
+## [Program Patterns](https://github.com/siba-x-prasad/DSA_Collections/blob/master/ReadMe/dsaProgramPatterns/problemSolvingCodingPatterns.md)
 ## How it works internally
 
