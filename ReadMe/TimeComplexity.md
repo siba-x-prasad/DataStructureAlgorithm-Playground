@@ -2,7 +2,8 @@
 
 - https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/
 - [Big O Cheatsheet](https://www.bigocheatsheet.com)
--
+- [Link 1](https://medium.com/@pnandhiniofficial/time-and-space-complexity-a-beginners-guide-88d617d29d01)
+- [Link 2](https://medium.com/@pnandhiniofficial/time-and-space-complexity-a-beginners-guide-88d617d29d01)
 
 ## Time Complexity
 
