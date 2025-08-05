@@ -6,22 +6,41 @@
   - Maximum sum of sub array of size K. 
   - Longest substring with distinct characters.
   - Minimum window substring.
+### Programs ()
+- https://medium.com/@kirti07arora/top-10-most-asked-sliding-window-interview-questions-cf8dfdb3fe48
+- Longest Substring Without Repeating Characters
+- Minimum Size Subarray Sum
+- Minimum Window Substring
+- Maximum Sum Subarray of Size K
+- Longest Repeating Character Replacement
+- Sliding Window Maximum
+- Longest Subarray with Ones after Replacement
+- Smallest Subarray with Sum Greater than S
+- Fruits into Baskets
+- Find All Anagrams in a String
 ## 2. Two Pointers
+- https://medium.com/@YodgorbekKomilo/two-pointer-technique-in-java-58542f961ac8
 - Key Idea: Use two pointers to traverse or compare values from different ends or the same start.
 - Use two pointers to traverse or compare values from different ends or the same start.
 - Used for sorted arrays, linked lists, or strings to optimize space or time complexity.
 - **Common Problems:**
-   - Pair with a given sum.
+   - Finding Pairs with a Given Sum
+   - Reversing a String
    - Removing duplicates in place.
    - Merging two sorted arrays.
+   - Finding the Longest Substring Without Repeating Characters
    
 ## 3. Fast and Slow Pointers (Tortoise and Hare)
+- https://dev.to/zzeroyzz/cracking-the-coding-interview-part-4-the-fast-and-slow-pointer-technique-47nb
+- https://medium.com/@ksaquib/mastering-coding-interview-patterns-fast-and-slow-pointers-java-python-and-javascript-ad84b0233f45
 - Key Idea:Move one pointer faster than the other and observe the intersection.
    - Used to detect cycles in linked lists or arrays.
    - **Common Problems:**
    - Detecting a cycle in a linked list.
+   - Finding the Start of a Cycle in a Linked List
    - Finding the middle element of a linked list.
    - Finding the duplicate number in an array.
+   - Happy Number
 ## 4. Merge Intervals
 - Key Idea : Sort intervals by start time and merge them iteratively.
 - Used for overlapping interval problems.
@@ -73,6 +92,8 @@
     - Huffman encoding.
     - Fractional knapsack.
 ## 11. Graph Traversal (BFS/DFS)
+- Tree Breadth-First Search
+- Tree Depth First Search
 - Key Idea: Traverse the graph using stacks (DFS) or queues (BFS).
 - Used for graph or grid-related problems.
 - **Common Problems:**
@@ -114,7 +135,6 @@
     - Daily temperatures.
     - Sliding window maximum.
  
-   
 - 1. Sliding Window
 - 2) Islands (Matrix Traversal)
 - 3) Two Pointers
